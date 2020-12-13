@@ -14,12 +14,18 @@ import Message from '../images/message.png'
 import Notification from '../images/notification.png'
 import Grid from '../images/grid.png'
 import LinkedIn from '../images/linkedIn.png'
+import {getAllPosts} from '../Redux/Data/getDataAction'
 // import Search from '../images/search.png'
 class Dashboard extends Component {
+
+    componentDidMount(){
+        getAllPosts()
+    }
     render() {
         console.log(this.props)
         const { isAuth }= this.props
         const {userData} = this.props
+        
         if(!isAuth){
             return(
                 <Redirect to='/' />
@@ -93,5 +99,9 @@ const mapStateToProps = (state) => ({
     userData: state.login.data,
     
   });
+  const mapDispatchToProps = (dispatch)=>({
+    getAllPosts: (payload)=>(dispatch(getAllPosts(payload))),
 
-export default connect(mapStateToProps, null)(Dashboard);
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
