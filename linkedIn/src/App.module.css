@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  margin-top: 10;
+  text-align: center;
+  color: #fff;
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+  background-color: var(--cool-gray-80,#283e4a);
+  height: 50px;
+}

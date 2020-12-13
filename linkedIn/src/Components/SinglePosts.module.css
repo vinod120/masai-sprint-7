@@ -1,0 +1,53 @@
+.sharePost{
+    margin: 10px;
+    background: var(--white,#fff);
+    border-radius: 2px;
+    color: var(--warm-gray-60,#84878a);
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    transition: box-shadow 83ms;
+    background-color: #fff;
+    position: relative;
+}
+.postSubSection{
+    display: flex;
+    padding: 10;
+}
+.postSubSection > div {
+    flex: 1;
+}
+.postHeading{
+    display: flex;
+}
+
+.interActive{
+    display: flex;
+}
+.interActive > div{
+    margin-right: 10;
+}
+.likes > span{
+    font-size: 13px;
+}
+.likes > span:hover{
+    color: #026ca0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.commentDisplay{
+    font-size: 13px;
+}
+.commentDisplay:hover{
+    box-shadow: 5px 5px 5px 5px #eeeeee;
+}
+.Events{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 2px;
+}
+.Events:hover{
+    background-color: #bdbdbd;
+    
+}

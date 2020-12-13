@@ -1,0 +1,22 @@
+.navbar{
+    text-align: center;
+    color: #fff;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    background-color: var(--cool-gray-80,#283e4a);
+    height: 60px;
+  
+  }
+  .header{
+      display: flex;
+      padding-top: 5px;
+  }
+  .header > div {
+      flex: 0.2;
+  }
+  
