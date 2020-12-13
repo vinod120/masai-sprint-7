@@ -90,9 +90,17 @@ class Login extends Component {
                         <div style={{marginTop:10}}>
                             New to LinkedIn? <span style={{color:'#015f92'}}><Link to='/register'>Join now</Link></span>
                         </div>
+                        <hr />
+                        use below credentials<br/>
+                        useraname: vinod/Shanthi/Nrupul<br />
+                        password: 123
+                        <br />
+                        <div>
+                        {isLoading && "...loading"}
+                        {error && error}
+                        </div>
                     </div>
-                    {isLoading && "...loading"}
-                    {error && error}
+                    
                 </>
             )
         }
