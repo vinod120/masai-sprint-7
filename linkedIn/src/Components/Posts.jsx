@@ -60,6 +60,7 @@ class Dashboard extends Component {
         this.setState({
             togglePostForm: !this.state.togglePostForm
         })
+        getAllPosts()
     }
     render() {
         const {title, body, url, togglePostForm} = this.state
